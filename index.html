@@ -2,14 +2,15 @@
 <html lang="ja">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Space Game</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>Space Shooter</title>
     <style>
       body {
         margin: 0;
         padding: 0;
-        overflow: hidden;
         background-color: #000;
+        overflow: hidden; /* スクロール禁止 */
+        touch-action: none; /* スマホでのピンチイン・スクロール等を無効化 */
       }
       canvas {
         display: block;
